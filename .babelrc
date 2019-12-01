@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/env"],
+  "plugins": [
+    "@babel/transform-classes",
+    "@babel/transform-strict-mode",
+    [
+      "module-resolver",
+      {
+        "extensions": [".js", ".ts"],
+        "root": ["./"]
+      }
+    ],
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}
